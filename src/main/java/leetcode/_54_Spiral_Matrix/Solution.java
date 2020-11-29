@@ -17,17 +17,25 @@ public class Solution {
 
         while (left <= right && top <= bottom) {
             // from left to right
-            for (int i = left; i <= right; i++) result.add(matrix[top][i]);
+            for (int i = left; i <= right; i++) {
+                result.add(matrix[top][i]);
+            }
 
             // from top to bottom
-            for (int i = top + 1; i <= bottom; i++) result.add(matrix[i][right]);
+            for (int i = top + 1; i <= bottom; i++) {
+                result.add(matrix[i][right]);
+            }
 
             if (left < right && top < bottom) {
                 // from right to left
-                for (int i = right -1 ; i > left; i--) result.add(matrix[bottom][i]);
+                for (int i = right - 1; i > left; i--) {
+                    result.add(matrix[bottom][i]);
+                }
 
                 // from bottom to top
-                for (int i = bottom; i > top; i--) result.add(matrix[i][left]);
+                for (int i = bottom; i > top; i--) {
+                    result.add(matrix[i][left]);
+                }
             }
 
             left++;
