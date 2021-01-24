@@ -2,7 +2,7 @@ package leetcode._125_Valid_Palindrome;
 
 /**
  * [125. Valid Palindrome] (https://leetcode.com/problems/valid-palindrome/)
- * #facebook
+ * #facebook #yandex
  */
 public class Solution {
     public boolean isPalindrome(String s) {
